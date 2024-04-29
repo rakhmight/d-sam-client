@@ -1,0 +1,11 @@
+.titlebar {
+    grid-area: titlebar;
+    background-color: #0b2638;
+    user-select: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }

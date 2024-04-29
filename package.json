@@ -1,0 +1,48 @@
+{
+  "name": "d-sam",
+  "private": true,
+  "description": "Quick data sampling",
+  "author": "Rakhimov Diyor<mr.rakhimov@mail.com>",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@reduxjs/toolkit": "^2.2.3",
+    "@tanstack/react-virtual": "^3.2.0",
+    "@tauri-apps/api": "^1",
+    "chakra-react-select": "^4.7.6",
+    "dexie": "^4.0.1",
+    "dexie-react-hooks": "^1.1.7",
+    "exceljs": "^4.4.0",
+    "framer-motion": "^11.0.25",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-dynamic-virtual-scroll": "^1.4.0",
+    "react-icons": "^5.0.1",
+    "react-redux": "^9.1.0",
+    "react-router-dom": "^6.22.3",
+    "react-tailwindcss-datepicker": "^1.6.6",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1",
+    "@types/node": "^20.12.4",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^5.0.0"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "d-sam",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "minimize": true,
+        "maximize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
+      }
+    },
+    "windows": [
+      {
+        "title": "Data sampling",
+        "width": 1240,
+        "height": 700,
+        "fullscreen": false,
+        "resizable": false,
+        "center": true,
+        "decorations": false,
+        "visible": false,
+        
+        "fileDropEnabled": false
+      },
+      {
+        "width": 600,
+        "height": 600,
+        "decorations": false,
+        "url": "splashscreen.html",
+        "transparent": true,
+        "center": true,
+        "label": "splashscreen"
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "t-sam",
+      "icon": [
+        "icons/d-sam.png",
+        "icons/d-sam.ico"
+      ]
+    }
+  }
+}
