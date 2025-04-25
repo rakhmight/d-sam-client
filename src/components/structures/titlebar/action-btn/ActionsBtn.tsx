@@ -1,10 +1,12 @@
 import { FC, useState } from 'react'
 import { WindowMethodsAPI } from './types'
-import { appWindow } from '@tauri-apps/api/window'
+import { getCurrentWindow } from '@tauri-apps/api/window';
 import { IconButton, Icon } from '@chakra-ui/react'
 import { VscChromeMinimize } from 'react-icons/vsc'
 import { TfiClose } from 'react-icons/tfi'
 import { FiMinimize2, FiMaximize2 } from 'react-icons/fi'
+
+const appWindow = getCurrentWindow();
 
 const ActionBtn : FC = () => {
     const [ isMaximized, changeMaximized ] = useState(false)

@@ -82,7 +82,7 @@ const DownloadModal : FC<NavigationModalProps> = ({state, handler}) => {
                 if(data.fileID === filter.fileID){
                   if(filter.type == DataTypes.Date){
   
-                    if((data[filter.fileKey] as Date) >= new Date(filter.filter[0]) && (data[filter.fileKey] as Date) <= new Date(filter.filter[1])) listData.push(data)
+                    if((data[filter.fileKey] >= new Date(filter.filter[0])) && (data[filter.fileKey] <= new Date(filter.filter[1]))) listData.push(data)
   
                   } else if(filter.type == DataTypes.String || filter.type == DataTypes.Telephone || filter.type == DataTypes.Number && !filter.isRanged){
       

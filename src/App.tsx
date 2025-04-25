@@ -4,7 +4,7 @@ import Titlebar from './components/structures/titlebar/Titlebar'
 import Sidebar from './components/structures/sidebar/Sidebar'
 import AppRoutes from './routes'
 import "@/assets/css/global.css"
-import { invoke } from '@tauri-apps/api/tauri'
+import { invoke } from '@tauri-apps/api/core'
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
@@ -34,7 +34,7 @@ function App() {
     document.addEventListener('DOMContentLoaded', () => {
       invoke('close_splashscreen')
     })
-  })
+  }, [])
 
   useEffect(() => {
     if(dateStack.stack.length) {

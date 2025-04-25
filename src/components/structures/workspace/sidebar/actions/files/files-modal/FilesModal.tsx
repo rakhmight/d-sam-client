@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from 'react'
-import { LuFileEdit  } from "react-icons/lu";
+import { LuFileDigit  } from "react-icons/lu";
 import ModalLayout from '@/components/ui/modals/modals-layout/ModalLayout'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
@@ -18,7 +18,7 @@ const FilesModal : FC<NavigationModalProps> = ({state, handler}) => {
   const modalData = {
     state,
     handler,
-    icon: LuFileEdit,
+    icon: LuFileDigit,
     title: 'Управление файлами'
   }
 
